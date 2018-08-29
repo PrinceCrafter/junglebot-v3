@@ -55,6 +55,7 @@ ${prefix}role ⇏ give role
 ${prefix}rerole ⇏ remove role
 ${prefix}sug ⇏ to add suggest !
 ${prefix}giveaway ⇏ to create a giveaway
+>count ⇏ Server Members Count
 ${prefix} خواطر ⇏ game خواطر
 ${prefix}صراحه ⇏ game صراحه
 ***Note*** : Bot In Developing.
@@ -308,7 +309,28 @@ message.react("??")
 }
 });
 
+client.on('guildDelete', guild => {
+  client.channels.get("471436304090005505").send(`:negative_squared_cross_mark: **${client.user.tag} طلع من سيرفر
+Server name: __${guild.name}__
+Server owner: __${guild.owner}__
+Server id: __${guild.id}__ 
+Server Count: __${guild.memberCount}__**`)
+});
 
+    Client.on('message', message => {
+
+    if (message.content === ">count") {
+
+    let embed = new Discord.RichEmbed()
+
+.addField('**Count**: ' , message.guild.memberCount)
+.setColor("#51cde6")
+.setDescription(`${message.guild.name}`)
+     message.channel.sendEmbed(embed);
+} 
+
+});
+  
    
    client.on('message', message => {
 	       var prefix = ">";
