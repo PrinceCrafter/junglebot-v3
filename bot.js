@@ -319,7 +319,7 @@ Server id: __${guild.id}__
 Server Count: __${guild.memberCount}__**`)
 });
 
-    Client.on('message', message => {
+    client.on('message', message => {
 
     if (message.content === ">count") {
 
