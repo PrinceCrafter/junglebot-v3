@@ -1103,52 +1103,14 @@ client.on('message', message => {
         message.channel.send('#credit @!PrinceCrafter#0294')
     }
 });
-
-
-client.on("ready", () => {
-let channel = client.channels.get("509450326923804686")
-setInterval(function() {
-channel.send(`نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج ر نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج رر رر نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج نوفرج رنوفرج نوفرج نوفرج نوفرج نوفرج نوفرج رر`);
-}, 25)
+  
+client.on('ready', async() => {
+var server = "509450326923804682"; // ايدي السررفر
+var channel = "509450326923804686";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , ')
+    },305);
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var prefix = "s";
-client.on('message', message => {
-if (message.author.bot) return;
-if (!message.content.startsWith(prefix)) return;
-
-let command = message.content.split(" ")[0];
-command = command.slice(prefix.length);
-
-let args = message.content.split(" ").slice(1);
-
-if (command == "s") {
-if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('?|**\`ADMINISTRATOR**');
-
-
-message.channel.sendMessage(args.join(" "))
-message.delete()
-}
-});
-
-
-
-
 
 	client.on('message', message => {
     if(message.content === ">info") {
