@@ -1098,20 +1098,6 @@ client.on('message', message => {
 
 
 
-client.on('message', message => {
-    if(message.content === '7wl'){
-        message.channel.send('#credit @!PrinceCrafter#0294')
-    }
-});
-  
-client.on('ready', async() => {
-var server = "509450326923804682"; // ايدي السررفر
-var channel = "509450326923804686";//ايدي الروم
-    setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , Magic Spam , ')
-    },305);
-})
-
 	client.on('message', message => {
     if(message.content === ">info") {
         const embed = new Discord.RichEmbed()
