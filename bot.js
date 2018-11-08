@@ -26,7 +26,7 @@ client.on("message", message => {
       .setColor("#000000") 
       .setDescription(`
       
-                    Snow-Bot Commands
+                    Legends System Commands
 Please Choose:
              
 ${prefix}ban ⇏  خاصية الباند
